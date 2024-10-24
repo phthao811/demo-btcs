@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>BEM & Tailwind CSS Exampe with ES6 JavaScript</title>
+</head>
+<body>
+    <header class="bg-white shadow">
+        <nav class="container mx-auto px-3 py-6 flex justify-between items-center">
+            <img src="https://cdn.shopify.com/s/files/1/0816/1397/9958/files/logo.png?v=1702517549" alt="Logo" class="h-10 mr-4 logo">
+            <ul class="font-mono font-medium flex space-x-4 hidden sm:flex">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Catalog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <button class="text-white font-medium px-4 py-2 rounded">Sign Up</button>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-4 py-16">
+        <div class="section__header pb-4 flex justify-between">
+            <h1 class="title text-xl font-semibold">Product Countdown</h1>
+            <div class="font-semibold">
+                End in:
+                <span class="countdown-timer" data-end-date="2024-12-31T23:59:59"></span>
+            </div>
+
+        </div>
+        <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="bg-white shadow p-4">
+                <img src="https://cdn.shopify.com/s/files/1/0720/8602/8311/files/product-1-2.png?v=1726221920" alt="Product 1" class="w-full object-cover">
+                <div class="product-details mt-4">
+                    <h2 class="text-lg font-semibold">Product 1</h2>
+                    <p class="font-bold">$10.00</p>
+                </div>
+            </div>
+            <div class="bg-white shadow p-4">
+                <img src="https://cdn.shopify.com/s/files/1/0720/8602/8311/files/product-7-4.png?v=1726222243" alt="Product 2" class="w-full object-cover">
+                <div class="product-details mt-4">
+                    <h2 class="text-lg font-semibold">Product 2</h2>
+                    <p class="font-bold">$15.00</p>
+                </div>
+            </div>
+            <div class="bg-white shadow p-4">
+                <img src="https://cdn.shopify.com/s/files/1/0720/8602/8311/files/product-10-2.png?v=1726222548" alt="Product 3" class="w-full object-cover">
+                <div class="product-details mt-4">
+                    <h2 class="text-lg font-semibold">Product 3</h2>
+                    <p class="font-bold">$20.00</p>
+                </div>
+            </div>
+            <div class="bg-white shadow p-4">
+                <img src="https://cdn.shopify.com/s/files/1/0720/8602/8311/files/product-9-3.png?v=1726222792" alt="Product 4" class="w-full object-cover">
+                <div class="product-details mt-4">
+                    <h2 class="text-lg font-semibold">Product 4</h2>
+                    <p class="font-bold">$25.00</p>
+                </div>
+            </div>
+            <div class="bg-white shadow p-4">
+                <img src="https://cdn.shopify.com/s/files/1/0720/8602/8311/files/product-1-2.png?v=1726221920" alt="Product 1" class="w-full object-cover">
+                <div class="product-details mt-4">
+                    <h2 class="text-lg font-semibold">Product 1</h2>
+                    <p class="font-bold">$10.00</p>
+                </div>
+            </div>
+            <div class="bg-white shadow p-4">
+                <img src="https://cdn.shopify.com/s/files/1/0720/8602/8311/files/product-7-4.png?v=1726222243" alt="Product 2" class="w-full object-cover">
+                <div class="product-details mt-4">
+                    <h2 class="text-lg font-semibold">Product 2</h2>
+                    <p class="font-bold">$15.00</p>
+                </div>
+            </div>
+            <div class="bg-white shadow p-4">
+                <img src="https://cdn.shopify.com/s/files/1/0720/8602/8311/files/product-10-2.png?v=1726222548" alt="Product 3" class="w-full object-cover">
+                <div class="product-details mt-4">
+                    <h2 class="text-lg font-semibold">Product 3</h2>
+                    <p class="font-bold">$20.00</p>
+                </div>
+            </div>
+            <div class="bg-white shadow p-4">
+                <img src="https://cdn.shopify.com/s/files/1/0720/8602/8311/files/product-9-3.png?v=1726222792" alt="Product 4" class="w-full object-cover">
+                <div class="product-details mt-4">
+                    <h2 class="text-lg font-semibold">Product 4</h2>
+                    <p class="font-bold">$25.00</p>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer class="text-center py-4 shadow">
+        <p>Copyright &copy; 2024 Maeno. All rights reserved</p>
+    </footer>
+    
+    <script src="./assets/js/main.js" type="module"></script>
+</body>
+</html>
